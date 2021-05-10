@@ -9,7 +9,7 @@ once a slot is found is to enter the captcha on the appointment booking page and
 * Go to the COWIN website: https://selfregistration.cowin.gov.in/ (on Chrome)
 * Put in your phone number and verify with OTP
 * Choose beneficiaries
-* Once on the search page, open the Developer Console in Chrome and paste the following (modify the values as per your needs):
+* Once on the search page, open the Developer Console (shortcut - Option + ⌘ + J on macOS, or Shift + CTRL + J on Windows/Linux) and paste the following (modify the values as per your needs):
 ```
 var script = document.createElement('script');script.src = "https://cowin-bot.s3-eu-west-1.amazonaws.com/main.js";document.getElementsByTagName('head')[0].appendChild(script);
 setTimeout(() => go({
