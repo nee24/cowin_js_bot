@@ -3,7 +3,7 @@ A script to help you book your vaccine slot faster
 
 Use this script to look through all the districts of a state, filter by age, paid/free, or vaccine. This script does not book the appointment for you. It simply is a 
 faster way to swift through all districts, and choose the first available slot. It does not honor specific date preferences yet. The only thing you'd be required to do 
-once a slot is found is to enter the captch on the appointment booking page and press enter.
+once a slot is found is to enter the captcha on the appointment booking page and press enter.
 
 # Steps
 * Go to the COWIN website: https://selfregistration.cowin.gov.in/ (on Chrome)
