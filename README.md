@@ -21,7 +21,7 @@ setTimeout(() => go({
     mode: 1, // 1 for find first available slot and proceed to book appointment, 2 for just looking through each district quickly
     searchIntervalInSeconds: 3, // time the script will wait to search for the next district. Use lower value with mode 1. Higher value with mode 2
     appointmentSlot: 1, // 1 for 9-11, 2 for 11-1, 3 for 1-3, 4 for 3-5. Only applicable with mode 1
-}), 500)
+}), 2000)
 ```
 * The script will start searching through appointments based on your criteria. If you've selected mode 2, as soon as an eligible appointment is found, the script chooses
 the slot, moves to the next page and chooses the time slot.
