@@ -1,9 +1,7 @@
 # cowin_js_bot
 A script to help you book your vaccine slot faster
 
-Use this script to look through all the districts of a state, filter by age, paid/free, or vaccine. This script does not book the appointment for you. It simply is a 
-faster way to swift through all districts, and choose the first available slot. It does not honor specific date preferences yet. The only thing you'd be required to do 
-once a slot is found is to enter the captcha on the appointment booking page and press enter.
+Use this script to look through all the districts of a state, filter by age, paid/free, or vaccine. This script can also solve the captcha and book the appointment for you! It does not honor specific date preferences yet.
 
 # Steps
 * Go to the COWIN website: https://selfregistration.cowin.gov.in/ (on Chrome)
@@ -14,6 +12,7 @@ once a slot is found is to enter the captcha on the appointment booking page and
 var script = document.createElement('script');script.src = "https://cowin-bot.s3-eu-west-1.amazonaws.com/main.js";document.getElementsByTagName('head')[0].appendChild(script);
 setTimeout(() => go({
     state: "Delhi",
+    districts: ["all"], // for specific districts, replace ["all"] with ["North Delhi", "South Delhi"]
     age: "Age 18+", // "Age 18+", "Age 45+"
     vaccine: "Covishield", // "Covaxin", "Covishield", leave blank for no pref
     type: "Free", // "Paid", "Free", leave blank for no pref
@@ -24,8 +23,7 @@ setTimeout(() => go({
 }), 2000)
 ```
 * The script will start searching through appointments based on your criteria. If you've selected mode 2, as soon as an eligible appointment is found, the script chooses
-the slot, moves to the next page and chooses the time slot.
-* Enter the captcha on the COWIN website and submit!
+the slot, moves to the next page and chooses the time slot and books the appointment for you!
 
 # Contributions
 Fork away or send in pull requests!
