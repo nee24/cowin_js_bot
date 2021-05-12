@@ -12,7 +12,7 @@ Use this script to look through all the districts of a state, filter by age, pai
 var script = document.createElement('script');script.src = "https://cowin-bot.s3-eu-west-1.amazonaws.com/main.js";document.getElementsByTagName('head')[0].appendChild(script);
 setTimeout(() => go({
     state: "Delhi",
-    districts: ["all"], // for specific districts, replace ["all"] with ["North Delhi", "South Delhi"]
+    districts: [], // leave untouched for all districts, for specific districts, replace [] with districts for e.g., ["North Delhi", "South Delhi"]
     age: "Age 18+", // "Age 18+", "Age 45+"
     vaccine: "Covishield", // "Covaxin", "Covishield", leave blank for no pref
     type: "Free", // "Paid", "Free", leave blank for no pref
