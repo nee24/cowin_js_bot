@@ -1,4 +1,4 @@
-# cowin_js_bot
+# COWIN Bot
 A script to help you book your vaccine slot faster
 
 Use this script to look through all the districts of a state, filter by age, paid/free, or vaccine. This script can also solve the captcha and book the appointment for you! It does not honor specific date preferences yet.
