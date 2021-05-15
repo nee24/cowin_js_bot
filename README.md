@@ -25,7 +25,7 @@ setTimeout(() => go({
     appointmentSlot: 1, // 1 for 9-11, 2 for 11-1, 3 for 1-3, 4 for 3-5. Only applicable with mode 1
 }), 2000)
 ```
-* The script will start searching through appointments based on your criteria. If you've selected mode 2, as soon as an eligible appointment is found, the script chooses
+* The script will start searching through appointments based on your criteria. If you've selected mode 1, as soon as an eligible appointment is found, the script chooses
 the slot, moves to the next page and chooses the time slot and books the appointment for you!
 
 # Contributions
